@@ -1,1 +1,1 @@
-worker: digitalghostingbot.py
+worker: python digitalghostingbot.py
