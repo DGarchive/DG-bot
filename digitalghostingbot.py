@@ -17,7 +17,12 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 # ================== НАСТРОЙКИ ==================
 import os
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-ADMIN_IDS = [511498717]  # замените на свой Telegram ID
+admin_ids_str = os.getenv('ADMIN_IDS')
+if admin_ids_str:
+    ADMIN_IDS = [int(x.strip()) for x in admin_ids_str.split(',') if x.strip()]
+else:
+    ADMIN_IDS = []
+    print("⚠️ ВНИМАНИЕ: ADMIN_IDS не заданы, админ-панель будет недоступна")
 PAYMENT_DETAILS = "Номер телефона для СБП: +7-800-800-80-80\nПолучатель: Иван И."
 CONTACT_EMAIL = "digitalghosting.archive@gmail.com"
 
