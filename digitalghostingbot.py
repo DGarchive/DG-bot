@@ -23,7 +23,7 @@ if admin_ids_str:
 else:
     ADMIN_IDS = []
     print("⚠️ ВНИМАНИЕ: ADMIN_IDS не заданы, админ-панель будет недоступна")
-PAYMENT_DETAILS = "Номер телефона для СБП: +7-800-800-80-80\nПолучатель: Иван И."
+PAYMENT_DETAILS = "Номер телефона для СБП: +7 993 636-08-79\nПолучатель: Иван Р. (Сбербанк)"
 CONTACT_EMAIL = "digitalghosting.archive@gmail.com"
 
 # Наличие товаров (только доступные для заказа)
